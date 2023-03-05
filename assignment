@@ -1,0 +1,145 @@
+1 Password Validation
+
+            function checkPassword() {
+              let password1;
+              let password2 ;
+                if (password1 == '')
+                    alert ("Please enter Password")
+                else if (password2 == '')
+                    alert ("Please enter confirm password");
+               
+                else if (password1 != password2) {
+                    console.log ("Password did not match. Password validation unsuccessful")
+             
+                }
+                else{
+                    console.log("Password Matched. Password validation successful")
+              
+                }
+            }
+    checkPassword();
+    
+    
+    2Calculator
+    
+    
+    function calculator(a,b,c){
+    let output=0;
+                    switch(c){
+                                  case '+':
+                                      output = a + b
+                                      Consloe.log(output)
+                                      break;
+                                   case '-':
+                                      output = a - b
+                                      Consloe.log(output)
+                                      break;
+                                   case '*':
+                                      output = a * b
+                                      Consloe.log(output)
+                                      break;
+                                   case '/':
+                                      output = a / b
+                                      Consloe.log(output)
+                                      break;
+                                  default:
+                                      console.log("invalid operator")
+                                      break;
+                    }
+    }
+    
+    calculator(1,2,"+");
+    
+    
+    3 color mixer
+    
+       function color mixer(color1,color2){
+       let  output
+   if((color1=="red" and color2="blue")||(color2=="red" and color1="blue"))  output=1;
+   else if((color1=="red" and color2="yellow")||(color2=="red" and color1="yellow"))  output=2;
+    else if((color1=="yellow" and color2="blue")||(color2=="yellow" and color1="blue"))  output=3;
+                    switch(output){
+                                  case 1:
+                                  
+                                      Consloe.log("purple")
+                                      break;
+                                   case 2:
+                                    
+                                      Consloe.log("orange")
+                                      break;
+                                   case 3:
+                                  
+                                      Consloe.log("green")
+                                      break;
+                                   
+                                  default:
+                                      console.log("invalid color combination")
+                                      break;
+                    }
+    }
+    
+    color mixer(red,green)
+    
+    4 Highest marks
+    
+    let a={20,40,66,75,98}
+    let max
+    for (var i = 0; i<5; i++) {
+    return arr[i] >max ? max=a[i] : ;
+  }
+  console.log(max);
+  
+  
+  5 Count vowel
+  const vowels = ["a", "e", "i", "o", "u"]
+
+function countVowel(str) {
+
+    let count = 0;
+
+    for (let letter of str.toLowerCase()) {
+        if (vowels.includes(letter)) {
+            count++;
+        }
+    }
+
+    return count
+}
+
+// take input
+const string = prompt('Enter a string: ');
+
+const result = countVowel(string);
+
+console.log(result);
+
+
+7 Remove duplicate
+
+ var arr = ["apple", "mango", 
+        "apple", "orange", "mango", "mango"];
+      
+    function removeDuplicates(arr) {
+        var unique = [];
+        arr.forEach(element => {
+            if (!unique.includes(element)) {
+                unique.push(element);
+            }
+        });
+        return unique;
+    }
+    console.log(removeDuplicates(arr));
+    
+    8 inverted right angle pattern
+    
+    
+    let i=prompt("enter i");
+    for(i;i<=6;i++){
+    
+    for(let j=6;j>=i;j--)
+    {
+    Console.log("*")
+    }
+}
+
+
